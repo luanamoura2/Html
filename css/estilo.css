@@ -1,0 +1,88 @@
+#logo{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+   
+}
+#cabecalho{ /*ajeitando o cabecalho e puxando a div*/
+    width: auto;
+    height: 150px;
+    background-color: rgb(247, 213, 239);
+    display: flex; 
+    justify-content: center ;
+    align-items: center;
+}
+*{
+    margin: 0;
+}
+@font-face{
+    font-family: "Fonte1";
+    src: url("Sweet\ Fig.ttf");
+}
+
+#menu{ /*ajeitando o cabecalho e puxando a div*/
+    width: auto;
+    height: 90px;
+    background-color: rgb(248, 178, 233);
+    display: flex; 
+    justify-content: space-around ;
+    align-items: center;
+    list-style: none;
+    font-family: "Fonte1";
+    font-size: 8px;
+}
+
+#conteudo{
+  
+  width: auto;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around ;
+  font-size: 30px;
+
+}
+
+
+#rodape{ /*ajeitando o cabecalho e puxando a div*/
+    width: auto;
+    height: 110px;
+    background-color: rgb(252, 214, 245);
+    text-align: center;
+    
+   
+}
+
+#conteudo2{
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: 700px;
+    display: flex;
+    align-items: right;
+    font-size: 30px;
+    text-align: right; 
+    margin: 20px; 
+  }
+  #conteudo3{
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end; 
+}
+    
+  
+  #maria{
+    width: 560px;
+    height: 560px;
+    justify-content: center;
+    margin:20px; 
+   
+}
+.titulo {
+    font-weight: bold; /* Estilo opcional para o título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+
+
+

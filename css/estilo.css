@@ -63,14 +63,25 @@
     text-align: right; 
     margin: 20px; 
   }
-  #conteudo3{
-    width: auto;
-    height: 100px;
-    display: flex;
-    justify-content: flex-end; 
-}
+
+  #galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    grid-template-rows: repeat(2, auto); /* Duas linhas, auto ajusta a altura */
+    gap: 20px; /* Espaço entre as imagens */
+    margin: 20px auto; /* Centraliza a galeria */
     
-  
+}
+
+
+  .conteudoGaleria{
+    width: 400px; /* Ajusta a largura das imagens com espaço */
+    height: auto;
+    margin: 0 auto;
+    
+    
+}
+
   #maria{
     width: 560px;
     height: 560px;

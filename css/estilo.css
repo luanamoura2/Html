@@ -53,15 +53,14 @@ a{
 
 }
 
-
 #rodape {
     /*ajeitando o cabecalho e puxando a div*/
     width: auto;
     height: 110px;
     background-color: rgb(252, 214, 245);
     text-align: center;
-
-
+    
+   
 }
 
 

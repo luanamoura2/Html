@@ -2,9 +2,16 @@
     font-family: "Fonte1";
     src: url("ELEGANT\ TYPEWRITER\ Light.ttf");
 }
-* {
-    margin: 0;
+*{
+    margin: 0 ;
 }
+
+body {
+    background-color: rgb(238, 187, 138);
+    width: 100%;
+    height: fit-content;
+}
+
 
 #logo {
     width: 160px;
@@ -24,27 +31,45 @@
     align-items: center;
 }
 
-body {
-    width: 100%;
-    height: max-content;
-    background-color: rgb(243, 204, 159);
+
+#burguer {
+    background-color: rgb(243, 204, 159) ;
+    color: rgb(5, 5, 5);
+    display: block;
+    padding: 10px;
+    cursor: pointer;
 }
 
-
+#burguer:hover {
+    background-color: wheat;
+    color: black;
+}
 #menu {
     /*ajeitando o cabecalho e puxando a div*/
     width: auto;
-    height: 90px;
+    height: fit-content;
     background-color: rgb(209, 172, 129);
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     font-family: "Fonte1";
     font-size: 25px;
+    
 }
 
-a {
+#menu li {
+    padding: 10px;
+    background-color: rgb(209, 172, 129);
+  
+    border-radius: 40px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#menu a {
     text-decoration: none;
     color: white;
 }
@@ -76,7 +101,7 @@ a {
 #conteudoHistoria {
     background-color: rgb(238, 224, 199);
     width: auto;
-    height: 700px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -88,8 +113,8 @@ a {
 #rodape {
     /*ajeitando o cabecalho e puxando a div*/
     width: auto;
-    height: 110px;
-    background-color: rgb(243, 204, 159);
+    height: auto;
+    background-color: rgb(238, 187, 138);
     text-align: center;
     font-family: "Fonte1";
     font-size: 20px;
@@ -134,12 +159,13 @@ a {
 #contato {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 30px 30px 30px 30px 30px 150px;
+    grid-template-rows: 30px 30px 30px 30px 30px 150px 30px 60px;
     background-color: rgb(238, 224, 199);
-    height: 450px;
+    height: fit-content;
     font-family: "Dream";
     color: rgb(59, 112, 156);
     padding: 30px;
+    row-gap: 10px;
 }
 
 #contato iframe {
@@ -161,9 +187,16 @@ a {
     grid-column: 1;
 }
 
+#Enviar {
+    width: 100px; 
+    height: 30px;
+    border-radius: 10px;
+
+}
 
 /*pra ve como fica no celular paisagem*/
-@media (min-width: 300px) and (max-width: 400px), (orientation: landscape) { 
+@media screen and (max-width: 767px) and (orientation: portrait){ 
+    
     #conteudo {
         flex-direction: column;
         flex-wrap: wrap;
@@ -200,15 +233,127 @@ a {
         gap: 10px;
     }
 
-    #capcuk {
-        width: 250px;
-        height: 250px;
-    }
     .imagensGaleria{
         width: 180px;
         height: 180px;
     }
 
-
+    iframe {
+        width: 280px;
+        height: 280px;
+        padding: 50px;
+    }
+    
+    #contato {
+        font-size: 14px; 
+        padding: 15px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 10px; 
+    }
+    #contato .formulario {
+        width: 100%; 
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #contato .formulario input,
+    #contato .formulario textarea {
+        font-size: 14px; 
+        padding: 10px;
+        width: 100%;
+        border-radius: 4px;
+    }
+     
 }
+
+
+    @media (min-width: 767px) {
+        #burguer {
+            display: none;
+
+        }
+
+        #menu {
+            display: flex;
+        }
+    }
+
+    /*tablet*/
+    @media screen and  (min-width: 767px) and (max-width: 866px) and (orientation: portrait) { 
+    
+        #conteudo {
+            flex-direction: column;
+            flex-wrap: wrap;
+            font-size: 15px;
+            gap: 10px;
+        }
+        #cabecalho {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        #imgHome{
+            width:280px; 
+            height:280px;
+        }
+        #menu {
+            font-size: 15px;
+        }
+    
+        #conteudoHistoria {
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 15px;
+            padding: 20px;
+        }
+        #Padaria {
+            width: 250px;
+            height: 250px;
+        }
+    
+        #galeria {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+       
+        .imagensGaleria{
+            width: 380px;
+            height: 380px;
+        }
+
+    iframe {
+        width: 380px;
+        height: 380px;
+    }
+    
+    #contato {
+        font-size: 14px; 
+        padding: 15px; 
+        display: flex;
+        flex-direction: column;
+        
+        gap: 10px; 
+    }
+    #contato .formulario {
+        width: 100%; 
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #contato .formulario input,
+    #contato .formulario textarea {
+        font-size: 14px; 
+        padding: 10px;
+        width: 100%;
+        border-radius: 4px;
+    }
+    
+}
+   
 

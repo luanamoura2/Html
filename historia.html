@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "shortcut icon" href= "img/icon.png" type= image/x-icon>
-    <title>Historia</title>
+    <title>História</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
@@ -14,6 +15,8 @@
     <div id="cabecalho">
         <img id="logo" src="img/boloPraHom.png">
     </div>
+    <i id= "burguer" class = "material-symbols-outlined" onclick="clickMenu()">menu</i>
+
     <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="historia.html">História</a></li>
@@ -21,12 +24,12 @@
         <li><a href="contato.html">Contato</a></li>
     </ul>
     <div id="conteudoHistoria">
-        <img id="Padaria" src="img/NovoConteudo.jpg" width="550px" height="550px"> 
+        <img id="Padaria" src="img/NovoConteudo.jpg"> 
         
         <p> A padaria "O Pão da Esperança"<br></br>
             
          é um lugar acolhedor, com um ambiente agradável e decorado com detalhes que transmitem carinho. As prateleiras estão sempre cheias de pães fresquinhos, feitos com ingredientes de qualidade. O aroma irresistível dos pães quentes convida todos a entrar e relaxar.
-As mesas, confortáveis e bem dispostas, são perfeitas para um café da manhã ou um lanche da tarde. Os clientes se sentem em casa, enquanto saboreiam deliciosas guloseimas e desfrutam de um espaço que promove a conexão entre amigos e familiares. É um lugar onde cada visita se torna uma experiência prazerosa e memorável.
+        As mesas, confortáveis e bem dispostas, são perfeitas para um café da manhã ou um lanche da tarde. Os clientes se sentem em casa, enquanto saboreiam deliciosas guloseimas e desfrutam de um espaço que promove a conexão entre amigos e familiares. É um lugar onde cada visita se torna uma experiência prazerosa e memorável.
 
 
 
@@ -41,6 +44,16 @@ As mesas, confortáveis e bem dispostas, são perfeitas para um café da manhã 
             <img id="insta" src="img/insta-removebg-preview.png" width="70" height="70">
         
     </div>
+
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 
 </body>
 

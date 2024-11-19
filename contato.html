@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "shortcut icon" href= "img/icon.png" type= image/x-icon>
     <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -16,12 +17,16 @@
         <img id="logo" src="img/boloPraHom.png">
     </div>
 
+    <i id= "burguer" class = "material-symbols-outlined" onclick="clickMenu()">menu</i>
+
     <ul id="menu">
+        
         <li><a href="index.html">Home</a></li>
         <li><a href="historia.html">História</a></li>
         <li><a href="galeria.html">Galeria</a></li>
         <li><a href="contato.html">Contato</a></li>
     </ul>
+
 
     <div id="contato">
         <form action="#">
@@ -38,6 +43,8 @@
 
         <textarea  class="form-control" type="text" id="mensagem" name="mensagem" placeholder="Digite aqui" rows="5"></textarea>
         
+        <input class="form-control" type="submit" value="Enviar" id="Enviar">
+
         </form>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2135.6866993733584!2d-48.54038358390847!3d-25.810746042254593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dbee3ed0f26ddf%3A0x6d54f546816f78c1!2sPanificadora%20e%20Confeitaria%20Soley!5e0!3m2!1spt-BR!2sbr!4v1730201983348!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -45,13 +52,23 @@
     
     <div id="rodape">
         <p> Doceria</p>
-        <p> Rua das Azaléias, 2303, Bairro - Girassol </p>
+        <p> Rua das Azaléias, 2303, Bairro - Girassol</p>
         <p>Telefone: (41) 8765-4904</p>
         <p> WhatsApp: (41) 7689-9890</p>
         <a href="https://www.instagram.com/0lu.moura/" target="_blank">
             <img id="insta" src="img/insta-removebg-preview.png" width="70" height="70">
         
     </div>
+
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
